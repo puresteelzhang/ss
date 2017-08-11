@@ -23,7 +23,7 @@ elem = pattern.findall(html.text)
 ss_info = []
 for i in range(0, 35, 7):
     if re.match('[_\da-zA-Z.-]+', elem[i+3]):
-        print (elem[i+3])
+        # print (elem[i+3])
         ss_info.append({'ip': elem[i+1], 'port': elem[i+2], 'local_port': '1080', 'password': elem[i+3], 'method': elem[i+4]})
 
 i = 0
