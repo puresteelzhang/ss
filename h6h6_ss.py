@@ -12,7 +12,8 @@ try:
     html = requests.get(url)
     os.system('echo get free ss from ' + url)
 except:
-    os.system('echo ' + url + 'failed')
+    os.system('echo visit ' + url + 'failed')
+    exit(0)
 
 
 # pattern = re.compile(r"<td>([_\da-zA-Z.-]+)</td>")
@@ -31,7 +32,7 @@ if len(ss_info) == 0:
     print (r'没有有效的ss,请访问 http://h6v6.com/ 查看详细信息')
     exit(0)
 elif len(ss_info) > 1:
-    i = input('请输入要使用的ss序号(0-{})：'.format(len(ss_info)))
+    i = input('请输入要使用的ss序号(1-{})：'.format(len(ss_info)))
     i = int(i)
 else:
     i = 1
