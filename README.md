@@ -5,11 +5,11 @@
 
 ## 准备
 
-需要提前装Python3 以及 pip
+需要提前装Python3环境、下载好源码
 
 ### 安装Shadowsocks
 ```
-pip install shadowsocks
+sudo apt-get install shadowsocks
 ```
 ### Chrome安装SwitchyOmega插件并配置
 将项目中的SwitchyOmega.crx拖向 设置-扩展程序 即可  
