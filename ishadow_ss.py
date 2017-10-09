@@ -16,7 +16,7 @@ def get_free_ss_info():
     try:
         html = requests.get(url)
     except:
-        os.system('echo ' + url + '访问失败')
+        os.system('echo ' + url + ' 访问失败')
         return None
     os.system('echo get free ss from ' + url)
 
@@ -55,6 +55,8 @@ def main():
     # for item in get_free_ss_info():
     #     ss_infos.append(item)
     ss_infos = get_free_ss_info()
+    if ss_infos is None:
+	    exit(1)
 
     str = '''
 1-3: 美国   
